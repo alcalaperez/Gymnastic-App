@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Gymnastics</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Usuario</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_log_in">Iniciar sesión</string>
+    <string name="action_sign_in">¿No estas registrado? Crea una cuenta ahora</string>
+    <string name="action_sign_in_short">Registrarse</string>
+    <string name="error_invalid_email">Email no valido</string>
+    <string name="error_invalid_password">La contraseña es demasiado corta</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">Los campos no deben estar vacios</string>
+
+
+    <string name="verifycard">Numero de socio</string>
+    <string name="verifykey">Codigo proporcionado en su gimnasio sin guiones</string>
+    <string name="verifykeyHint">Codigo</string>
+
+    <string name="continueVer">Verificar</string>
+
+    <string name="ectomorfo">Ectomorfo</string>
+    <string name="mesomorfo">Mesomorfo</string>
+    <string name="endomorfo">Endomorfo</string>
+    <string name="title_activity_register">Gymnastics: registro</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="finishRegister">Finalizar</string>
+    <string name="title_activity_main">Gymnastics</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="ejercicios">Listado ejercicios</string>
+    <string name="info">Información personal</string>
+    <string name="numbercard">Numero de socio</string>
+    <string name="emptyVerifyDialog">Asegurese de completar tanto el numero de socio (mismo numero en su tarjeta) y el codigo proporcionado por su gimnasio.</string>
+
+</resources>

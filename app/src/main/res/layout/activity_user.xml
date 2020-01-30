@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data class="ActivityUserBinding">
+        <variable
+            name="userViewModel"
+            type="com.uo226321.joel.gymnastics.viewmodel.UserViewModel"/>
+    </data>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tituloActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="13dp"
+        android:textAppearance="@android:style/TextAppearance.Holo.DialogWindowTitle"
+        android:textSize="30sp"
+        android:text="@{userViewModel.nombre}"/>
+
+
+    <LinearLayout android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/horizontal_divider"
+        android:showDividers="middle"
+        android:weightSum="3"
+        android:layout_below="@+id/tituloActivity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+        <TextView android:id="@+id/txEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            android:lineSpacingExtra="8sp"
+            android:layout_weight="1"
+            android:text="@{userViewModel.edad}"/>
+
+        <TextView android:id="@+id/txAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:lineSpacingExtra="8sp"
+            android:layout_weight="1"
+            android:text="@{userViewModel.altura}"/>
+
+        <TextView android:id="@+id/txPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="25dp"
+            android:textSize="18sp"
+            android:lineSpacingExtra="8sp"
+            android:layout_weight="1"
+            android:text="@{userViewModel.peso}"/>
+
+    </LinearLayout>
+
+    <com.app.progresviews.ProgressLine
+        android:id="@+id/progress_line"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_weight="0.9"
+        app:definition="Indice Masa Corporal (IMC)"
+        app:lineBarWidth="7dp"
+        app:lineProgressColor="@color/colorPrimary"
+        app:underLineColor="@android:color/darker_gray"
+        app:valueDefTextSize="30sp"
+        app:valuePercentage="45"
+        app:lineDefTextSize="16sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+    </com.app.progresviews.ProgressLine>
+
+    <TextView android:id="@+id/descripcionImcUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_line"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@{userViewModel.imc}"/>
+
+    <TextView android:id="@+id/descripcionIngesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descripcionImcUsuario"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@{userViewModel.ingesta}"/>
+</RelativeLayout>
+</layout>

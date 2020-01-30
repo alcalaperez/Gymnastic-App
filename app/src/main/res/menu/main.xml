@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ejercicios"
+        android:orderInCategory="100"
+        android:title="@string/ejercicios"
+        android:icon="@drawable/icon_exercise"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/informacion"
+        android:orderInCategory="100"
+        android:title="@string/info"
+        android:icon="@drawable/icon_user"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uo226321.joel.gymnastics">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/playstoreicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/playstoreicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".view.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.VerifyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.FormActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.SomatiposActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.ReproductorActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.MusculosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.EjerciciosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.EjercicioMostrarActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.UserActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

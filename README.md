@@ -1,7 +1,7 @@
 # Gymnastic-App
 Android app client to follow your gym exercises
 
-<img src="https://i.imgur.com/dMl2xxY.jpg" width="33%" > <img src="https://i.imgur.com/2CB0ltW.jpg" width="33%" > <img src="https://i.imgur.com/h21MQqg.gif" width="33%" >
+<img src="https://i.imgur.com/dMl2xxY.jpg" width="30%" > <img src="https://i.imgur.com/2CB0ltW.jpg" width="30%" > <img src="https://i.imgur.com/h21MQqg.gif" width="30%" >
 
 ##  Demo
 Test User: j

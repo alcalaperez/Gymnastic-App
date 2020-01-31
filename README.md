@@ -1,3 +1,4 @@
+![logo](./app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
 # Gymnastic-App
 Android app client to follow your gym exercises
 
